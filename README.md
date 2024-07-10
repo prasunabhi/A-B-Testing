@@ -1,25 +1,46 @@
-# Analysis of Health Cost Information - Intro to Data Science (Technology used: R)
+# A/B Testing for Hi Tea, Syracuse University
 
 ## Overview
-This project analyzes health cost information for individuals, focusing on the impact of various attributes such as age, BMI, physical exercise, smoking habits, marital status, location, and education level on medical expenses. The analysis aims to provide insights for Health Management Organizations (HMOs) to lower the medical costs of their clients and suggest business policies.
+This project involved implementing A/B testing on Hi Tea's Instagram page to optimize social media engagement. The goal was to enhance digital presence by incorporating diverse, people-inclusive imagery alongside traditional food and beverage-focused content.
 
 ## Key Features
-* **Identification of key attributes:** Analyzed how age, BMI, smoking status, exercise habits, marital status, and other factors influence medical expenses.
-* **Predictive modeling:** Developed models such as Linear Regression, Support Vector Machines, and Association Rules Mining to predict medical costs.
-* **Interactive visualization:** Created a Shiny Web app to visualize analysis results, making it easier for stakeholders to understand and act on the insights.
+* **A/B Test Design:** Compared the engagement levels of Instagram posts featuring only food and drinks (Version A) against posts including people enjoying these items (Version B).
+* **Data Collection:** Used Qualtrics surveys to gather data while ensuring research validity through rigorous randomization checks and regression testing.
+* **Recommendations:** Provided actionable insights for improving Hi Tea's digital presence based on the results of A/B tests and regression analysis.
 
 ## Methodology
-* **Data cleaning and preprocessing:** Utilized R programming for data cleaning and preprocessing, including handling missing values and transforming variables.
-* **Data analysis:** Employed advanced statistical modeling techniques, including Linear Regression and Support Vector Machines (SVM).
-* **Visualization:** Developed interactive visualizations using the Shiny Web app to communicate results effectively.
-* **Tools used:** R, Shiny, ggplot2, caret, e1071, and other R packages for data analysis and visualization.
+* **Media Channel:** Instagram
+* **Motivation:** The existing Instagram page was product-centric, featuring only drink photos. The hypothesis was that including images of people would increase engagement.
+* **Testing Variables:** Interaction (follows, likes, reach)
+* **Outcome Variables:** Increase in the number of followers, likes, and reach.
+
+## Survey Design
+* **Warm-Up Questions:** Included questions about tea consumption habits, preferences, and motivations.
+* **Outcome Variable Questions:** Assessed interest in visiting Hi Tea, likelihood of purchasing items, and factors influencing follow decisions.
+* **Customer Loyalty Questions:** Explored likelihood of revisiting and recommending Hi Tea.
+* **Customer Characteristics Questions:** Covered demographic information and spending habits.
+* **Demographic Questions:** Included gender, occupation, and spending per visit.
 
 ## Key Findings
-* **Impact of smoking:** Smokers have significantly higher medical expenses compared to non-smokers.
-* **BMI and medical costs:** Higher BMI is positively correlated with increased medical expenses.
-* **Exercise habits:** Regular physical exercise is associated with lower medical costs.
-* **Marital status and health costs:** Married individuals generally incur lower medical expenses than unmarried individuals.
-* **Predictive accuracy:** Achieved an 87.8% accuracy in predicting medical expense categories using the KSVM model.
+* **Respondents’ Characteristics:**
+    * Majority of survey respondents were male (62%).
+    * Most preferred drinking tea in the morning and evening (58%).
+    * Significant portion had visited Hi Tea and were likely to revisit (40% and 83%, respectively).
+* **Experiment Results:**
+    * Version B (Human Inclusive) engaged audiences more and increased visit and purchase likelihood compared to Version A (Food & Drinks Oriented).
+* **Interaction Effects:**
+    * Gender: Males responded positively to Version B, while females preferred Version A.
+    * Revisiting: New customers were more influenced by Version A.
 
 ## Conclusion
-The analysis provides valuable insights into the factors affecting medical expenses, enabling HMOs to make data-driven decisions to reduce costs and improve healthcare outcomes. The interactive Shiny Web app facilitates the communication of these insights to stakeholders, promoting informed decision-making.
+Hi Tea can enhance its digital presence by incorporating more human-inclusive content on Instagram. Targeting new customers and maintaining consistent, engaging content can drive visits and purchases. Leveraging the university's proximity, Hi Tea can attract students through promotions and event participation.
+
+## Recommendations
+* Focus on human-inclusive content on Instagram.
+* Increase the frequency of Instagram posts.
+* Target new customers with offers and promotions.
+* Participate in university events to attract student customers.
+
+## Project Artifacts
+* **Website:** [Hi Tea Syracuse](https://www.hiteasyracuse.com)
+* **Survey Link:** [Qualtrics Survey](https://syracuseuniversity.yul1.qualtrics.com/jfe/preview/previewId/18600b7b-5216-4258-9359-5a6f97ef90a8/SV_cFPxGfuNTbcn4KW?Q_CHL=preview&Q_SurveyVersionID=current)
